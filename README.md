@@ -19,7 +19,7 @@ after cloning this repo go inside frontend Folder
 
 you will need to add the following environment variables in .env file inside your frontend folder 
 
-`VITE_API_KEY`=localhost:<PORT>/api
+`VITE_API_KEY`=localhost:PORT/api
 
 
 ## Server Setup
@@ -36,7 +36,7 @@ Inside server Folder
 
 you will need to add the following environment variables in .env file inside your server folder 
 
-`PORT`=<PORT>
+`PORT`=PORT
 
 If Your Postgres Takes Passwword 
 
