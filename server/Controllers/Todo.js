@@ -81,6 +81,8 @@ export const savePdf = async(req,res)=>{
       }
       const data = fs.readFileSync(savePath,{encoding:'base64'})    
     await Prisma.pDFs.create({data:{data}})
+
+      fs.rmSync(savePath)
     return res.status(200).json({msg:"Saved!"})
     });
 

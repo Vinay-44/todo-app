@@ -22,7 +22,7 @@ const Todo = ({ todo, handleStatusChange, handleDeleteTodo,handleEditTodo }) => 
         defaultChecked={todo.status}
       />
       {!showEdit ? (
-        <p onDoubleClick={() => setShowEdit(true)} className="md:w-[80%] w-full">
+        <p onDoubleClick={() => setShowEdit(true)} className="md:w-[80%] w-full cursor-pointer">
           {todo.status ? (
             <span className="line-through text-[#63e] ">{todo.todo}</span>
           ) : (
