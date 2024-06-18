@@ -17,12 +17,12 @@ const Todo = ({ todo, handleStatusChange, handleDeleteTodo,handleEditTodo }) => 
     >
       <input
         onChange={(e) => handleStatusChange(e.target.checked, todo.Id)}
-        className="md:w-[4%] h-5 mt-1 bg-white  checked:bg-[#63e] rounded-[50%] appearance-none cursor-pointer"
+        className="md:w-[4%] w-[12%] h-7 md:h-5 mt-1 bg-white  checked:bg-[#63e] rounded-[50%] appearance-none cursor-pointer"
         type="checkbox"
         defaultChecked={todo.status}
       />
       {!showEdit ? (
-        <p onDoubleClick={() => setShowEdit(true)} className="md:w-[80%]">
+        <p onDoubleClick={() => setShowEdit(true)} className="md:w-[80%] w-full">
           {todo.status ? (
             <span className="line-through text-[#63e] ">{todo.todo}</span>
           ) : (
@@ -38,8 +38,8 @@ const Todo = ({ todo, handleStatusChange, handleDeleteTodo,handleEditTodo }) => 
       <div className="w-[30%] flex items-center justify-end">
         <button
           onClick={() => handleDeleteTodo(todo.Id)}
-          className={`md:w-[20%]  hover:fill-[#63e]  h-8 transition-all  bg-white  rounded-lg ${
-            showDelete ? "opacity-100" : "opacity-0"
+          className={`md:w-[20%] w-[40%]  hover:fill-[#63e]  h-8 transition-all  bg-white  rounded-lg ${
+            showDelete ? "md:opacity-100" : "md:opacity-0"
           }`}
         >
           <DeleteIcon />

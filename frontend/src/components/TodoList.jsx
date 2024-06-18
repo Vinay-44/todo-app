@@ -66,7 +66,7 @@ const TodoList = ({ todos, setTodos,loading }) => {
   }
   return (
     <div className="flex items-center justify-center mt-5">
-      <div className=" md:w-1/2 rounded-lg border-gray-600 border-2 divide-y-2">
+      <div className=" md:w-1/2 w-full rounded-lg border-gray-600 border-2 divide-y-2">
 
         {loading ? '...' : todos.length ? todos.map((item) => {
           return (
