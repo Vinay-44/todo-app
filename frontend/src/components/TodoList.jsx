@@ -78,7 +78,7 @@ const TodoList = ({ todos, setTodos,loading }) => {
               todo={item}
             />
           );
-        }) : <p className="text-3xl text-center p-5 underline">Please Add Some Todos...</p>}
+        }) : <p className="sm:text-3xl text-center p-5 underline text-xl">Please Add Some Todos...</p>}
       </div>
     </div>
   );

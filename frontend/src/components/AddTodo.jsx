@@ -34,8 +34,8 @@ const AddTodo = ({setTodos,downloadPDF,disabled}) => {
 
         <input value={todoInput} onChange={e=>setTodoInput(e.target.value)} className='bg-transparent outline outline-gray-500 outline-2 rounded p-2'/>
 
-        <button type='submit' className='pt-1 pb-2 px-2 bg-[#63e] rounded font-bold text-2xl hover:scale-110 transition-all'>+</button>
-        <button disabled={!disabled} className='p-2 bg-[#63e] rounded   hover:scale-110 transition-all' onClick={downloadPDF}>Download</button>
+        <button type='submit' className='pt-1 pb-2 px-2 bg-[#63e] rounded font-bold text-2xl md:hover:scale-110 transition-all'>+</button>
+        <button disabled={!disabled} className='p-2 bg-[#63e] rounded   md:hover:scale-110 transition-all' onClick={downloadPDF}>Download</button>
         </form>
         
     </>
