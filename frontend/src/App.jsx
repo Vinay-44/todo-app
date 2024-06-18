@@ -36,7 +36,7 @@ function App() {
      <Layout>
       <div className="absolute top-0  ">
       <a href="https://shanture.com" target="_blank">
-      <img className="w-32 hover:scale-110 transition-all hover:animate-pulse" src="https://shanture.com/wp-content/uploads/2024/06/cropped-2-300x218.png"/>
+      <img className="sm:w-32 w-24 hover:scale-110 transition-all hover:animate-pulse" src="https://shanture.com/wp-content/uploads/2024/06/cropped-2-300x218.png"/>
         </a>
       </div>
       <h1 className="text-center text-3xl font-bold tracking-widest flex items-center justify-center"> </h1>

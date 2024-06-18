@@ -30,7 +30,7 @@ const AddTodo = ({setTodos,downloadPDF,disabled}) => {
     }
   return (
     <>
-        <form className='flex items-center justify-center mt-10 gap-5' onSubmit={handleSubmit}>
+        <form className='sm:flex sm:items-center sm:justify-center mt-10 gap-5 flex flex-col' onSubmit={handleSubmit}>
 
         <input value={todoInput} onChange={e=>setTodoInput(e.target.value)} className='bg-transparent outline outline-gray-500 outline-2 rounded p-2'/>
 
